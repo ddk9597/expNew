@@ -120,3 +120,102 @@ section.main {
   text-overflow: ellipsis;  /* 말줄임표 표시 */
 }
 
+/* ------------ 핫둘광장 카드 형태 게시글 ------------ */
+.squareSection{
+  width: 80%;
+  height: 600px;
+}
+
+
+/* 컨테이너 */
+.squareContentWrapper {
+  padding-top: 20px;
+  background-color: #f9f9f9;
+}
+
+/* 카드 리스트: 4열 그리드, gap 조정 */
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+  max-width: 12800px;
+  margin: 0 auto;
+}
+
+/* 카드 하나 */
+.squareCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.squareCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 카드 이미지 */
+.cardImg {
+  width: 100%;
+  padding-top: 100%; /* 1:1 비율 */
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 텍스트 래퍼 */
+.cardTextWrapper {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 제목 */
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+/* 본문 */
+.cardContext {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* 태그 */
+.cardTag {
+  margin: 12px 16px 16px;
+  padding: 4px 8px;
+  background-color: #00ac97;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+/* 반응형: 테블릿 이하일 때 2열 그리드 */
+@media (max-width: 768px) {
+  .cardList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 모바일: 1열 그리드 */
+@media (max-width: 480px) {
+  .cardList {
+    grid-template-columns: 1fr;
+  }
+}
+
