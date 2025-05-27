@@ -1,3 +1,9 @@
+.sectionTitle{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+}
 
 .newsSection {
   padding: 20px;
@@ -61,6 +67,7 @@ section.main {
   margin: 0 auto;
   text-align: center;
   gap: 10px;
+  padding-top: 20px;
 }
 
 .announceBoxHeader{
@@ -214,6 +221,13 @@ section.main {
   font-weight: 500;
   border-radius: 4px;
   align-self: flex-start;
+}
+
+.alslTag{
+  background: #b55099;
+}
+.reporterTag{
+  background-color: #ba7320;
 }
 
 /* 반응형: 테블릿 이하일 때 2열 그리드 */
