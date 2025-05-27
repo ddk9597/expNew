@@ -1,237 +1,479 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="th:tymeleaf">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./headerFooter.css" />
-    <link rel="stylesheet" href="./newIndex.css" />
-    <link rel="stylesheet" href="./calWithList.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <!-- header -->
-    <div class="header">
-      <ul class="depth1">
-        <li>
-          <a href="#n" id="topMenu">핫둘핫둘서울</a>
-          <ul class="depth2">
-            <li>
-              <a href="/main/content/view/MN01020000.do">생활체육포털 소개</a>
-            </li>
-            <li><a href="/main/board/1/board_list.do">공지사항</a></li>
-            <li><a href="/main/board/6/board_list.do">보도자료</a></li>
-          </ul>
-        </li>
 
-        <li>
-          <a href="#n">우리동네 생활체육</a>
-          <ul class="depth2">
-            <li>
-              <a href="/main/facilities/facilities.do">우리동네 체육시설</a>
-            </li>
-            <li><a href="/main/board/8/board_list.do">우리동네 프로그램</a></li>
-            <li>
-              <a href="/main/board/11/board_list.do">우리동네 운동장소</a>
-            </li>
-          </ul>
-        </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./headerFooter.css" />
+  <link rel="stylesheet" href="./newIndex.css" />
+  <link rel="stylesheet" href="./calWithList.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-        <li>
-          <a href="#n">핫둘핫둘 정보광장</a>
-          <ul class="depth2">
-            <li><a href="/main/board/15/board_list.do">핫둘핫둘 새소식</a></li>
-            <li><a href="/main/board/9/board_list.do">핫둘핫둘 알쓸신잡</a></li>
-            <li>
-              <a href="/main/board/10/board_list.do">서울시민 스포츠 기자단</a>
-            </li>
-            <li>
-              <a href="/main/board/12/board_list.do">집에서도 핫둘핫둘</a>
-            </li>
-            <li><a href="/main/board/25/board_list.do">서울스포츠</a></li>
-            <li><a href="/main/board/50/board_list.do">추천영상</a></li>
-          </ul>
-        </li>
+<body>
+  <!-- header -->
+  <div class="header">
+    <ul class="depth1">
+      <li>
+        <a href="#n" id="topMenu">핫둘핫둘서울</a>
+        <ul class="depth2">
+          <li>
+            <a href="/main/content/view/MN01020000.do">생활체육포털 소개</a>
+          </li>
+          <li><a href="/main/board/1/board_list.do">공지사항</a></li>
+          <li><a href="/main/board/6/board_list.do">보도자료</a></li>
+        </ul>
+      </li>
 
-        <li>
-          <a href="#n">시민참여 프로그램</a>
-          <ul class="depth2">
-            <li class="ym">
-              <a href="#">교실형</a>
-              <ul class="depth3">
-                <li>
-                  <a href="/main/SP01040000_user/program_view.do"
-                    >자치구 축구 및 풋살교실</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="ym">
-              <a href="#">클럽형</a>
-              <ul class="depth3">
-                <li>
-                  <a href="/main/SP02010000_user/program_view.do"
-                    >서울시민리그</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP02040000_user/program_view.do"
-                    >학교스포츠클럽리그</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP02050000_user/program_view.do"
-                    >서울특별시장기 종목별 체육대회</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP02080000_user/program_view.do"
-                    >서울권대학 축구클럽리그</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="ym">
-              <a href="#">대회형</a>
-              <ul class="depth3">
-                <li>
-                  <a href="/main/SP03010000_user/program_view.do"
-                    >서울국제울트라트레일러닝 대회</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP03040000_user/program_view.do"
-                    >서울달리기대회</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP03050000_user/program_view.do"
-                    >여성마라톤 대회</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP03130000_user/program_view.do"
-                    >서울시민체육대축전</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP03140000_user/program_view.do"
-                    >서울하프마라톤</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP03150000_user/program_view.do"
-                    >쉬엄쉬엄 한강 3종 축제</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="ym">
-              <a href="#">체험형</a>
-              <ul class="depth3">
-                <li>
-                  <a href="/main/SP04010000_user/program_view.do"
-                    >찾아가는 체육관</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04020000_user/program_view.do"
-                    >가족스포츠 프로그램</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04030000_user/program_view.do"
-                    >한강명산트레킹</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04050000_user/program_view.do"
-                    >한강수상스포츠 체험</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04070000_user/program_view.do"
-                    >핫둘핫둘 유아체능단</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04080000_user/program_view.do"
-                    >운동하는 서울광장</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04090000_user/program_view.do"
-                    >서바이벌 프로그램</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04100000_user/program_view.do"
-                    >7979 서울 러닝크루</a
-                  >
-                </li>
-                <li>
-                  <a href="/main/SP04110000_user/program_view.do"
-                    >스포츠 in 아트스테이션</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+      <li>
+        <a href="#n">우리동네 생활체육</a>
+        <ul class="depth2">
+          <li>
+            <a href="/main/facilities/facilities.do">우리동네 체육시설</a>
+          </li>
+          <li><a href="/main/board/8/board_list.do">우리동네 프로그램</a></li>
+          <li>
+            <a href="/main/board/11/board_list.do">우리동네 운동장소</a>
+          </li>
+        </ul>
+      </li>
 
-        <li>
-          <a href="#n">핫둘핫둘 소통광장</a>
-          <ul class="depth2">
-            <li>
-              <a href="/main/schedule/user_schedule_list.do"
-                >생활체육 다이어리</a
-              >
-            </li>
-            <li><a href="/main/board/17/board_list.do">포토갤러리</a></li>
-            <li><a href="/main/board/19/board_list.do">Q&amp;A</a></li>
-          </ul>
-        </li>
-      </ul>
+      <li>
+        <a href="#n">핫둘핫둘 정보광장</a>
+        <ul class="depth2">
+          <li><a href="/main/board/15/board_list.do">핫둘핫둘 새소식</a></li>
+          <li><a href="/main/board/9/board_list.do">핫둘핫둘 알쓸신잡</a></li>
+          <li>
+            <a href="/main/board/10/board_list.do">서울시민 스포츠 기자단</a>
+          </li>
+          <li>
+            <a href="/main/board/12/board_list.do">집에서도 핫둘핫둘</a>
+          </li>
+          <li><a href="/main/board/25/board_list.do">서울스포츠</a></li>
+          <li><a href="/main/board/50/board_list.do">추천영상</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#n">시민참여 프로그램</a>
+        <ul class="depth2">
+          <li class="ym">
+            <a href="#">교실형</a>
+            <ul class="depth3">
+              <li>
+                <a href="/main/SP01040000_user/program_view.do">자치구 축구 및 풋살교실</a>
+              </li>
+            </ul>
+          </li>
+          <li class="ym">
+            <a href="#">클럽형</a>
+            <ul class="depth3">
+              <li>
+                <a href="/main/SP02010000_user/program_view.do">서울시민리그</a>
+              </li>
+              <li>
+                <a href="/main/SP02040000_user/program_view.do">학교스포츠클럽리그</a>
+              </li>
+              <li>
+                <a href="/main/SP02050000_user/program_view.do">서울특별시장기 종목별 체육대회</a>
+              </li>
+              <li>
+                <a href="/main/SP02080000_user/program_view.do">서울권대학 축구클럽리그</a>
+              </li>
+            </ul>
+          </li>
+          <li class="ym">
+            <a href="#">대회형</a>
+            <ul class="depth3">
+              <li>
+                <a href="/main/SP03010000_user/program_view.do">서울국제울트라트레일러닝 대회</a>
+              </li>
+              <li>
+                <a href="/main/SP03040000_user/program_view.do">서울달리기대회</a>
+              </li>
+              <li>
+                <a href="/main/SP03050000_user/program_view.do">여성마라톤 대회</a>
+              </li>
+              <li>
+                <a href="/main/SP03130000_user/program_view.do">서울시민체육대축전</a>
+              </li>
+              <li>
+                <a href="/main/SP03140000_user/program_view.do">서울하프마라톤</a>
+              </li>
+              <li>
+                <a href="/main/SP03150000_user/program_view.do">쉬엄쉬엄 한강 3종 축제</a>
+              </li>
+            </ul>
+          </li>
+          <li class="ym">
+            <a href="#">체험형</a>
+            <ul class="depth3">
+              <li>
+                <a href="/main/SP04010000_user/program_view.do">찾아가는 체육관</a>
+              </li>
+              <li>
+                <a href="/main/SP04020000_user/program_view.do">가족스포츠 프로그램</a>
+              </li>
+              <li>
+                <a href="/main/SP04030000_user/program_view.do">한강명산트레킹</a>
+              </li>
+              <li>
+                <a href="/main/SP04050000_user/program_view.do">한강수상스포츠 체험</a>
+              </li>
+              <li>
+                <a href="/main/SP04070000_user/program_view.do">핫둘핫둘 유아체능단</a>
+              </li>
+              <li>
+                <a href="/main/SP04080000_user/program_view.do">운동하는 서울광장</a>
+              </li>
+              <li>
+                <a href="/main/SP04090000_user/program_view.do">서바이벌 프로그램</a>
+              </li>
+              <li>
+                <a href="/main/SP04100000_user/program_view.do">7979 서울 러닝크루</a>
+              </li>
+              <li>
+                <a href="/main/SP04110000_user/program_view.do">스포츠 in 아트스테이션</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#n">핫둘핫둘 소통광장</a>
+        <ul class="depth2">
+          <li>
+            <a href="/main/schedule/user_schedule_list.do">생활체육 다이어리</a>
+          </li>
+          <li><a href="/main/board/17/board_list.do">포토갤러리</a></li>
+          <li><a href="/main/board/19/board_list.do">Q&amp;A</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- mainSection -->
+  <section class="main">
+    <!-- 새소식 -->
+    <div class="newsSection">
+      <div class="swiper news-swiper">
+        <div class="swiper-wrapper">
+          <!-- 슬라이드 1~9 -->
+          <div class="swiper-slide">
+            <img src="../img/news01.png" alt="news01" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news02.png" alt="news02" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news03.png" alt="news03" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news04.png" alt="news04" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news05.png" alt="news05" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news06.png" alt="news06" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news07.png" alt="news07" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news08.png" alt="news08" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/news09.png" alt="news09" />
+          </div>
+        </div>
+        <!-- 페이징 -->
+        <div class="swiper-pagination"></div>
+        <!-- 네비게이션 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
 
-    <!-- mainSection -->
-    <section class="main">
-      <!-- 새소식 -->
-      <div class="newsSection">
-        <div class="swiper news-swiper">
-          <div class="swiper-wrapper">
-            <!-- 슬라이드 1~9 -->
-            <div class="swiper-slide">
-              <img src="../img/news01.png" alt="news01" />
+    <!-- 달력과 공지사항, 보도자료 -->
+    <div class="announceSection">
+      <!-- 달력 -->
+      <div class="calWrapper">
+        <div class="calendarTitle sectionTitle">월간 일정</div>
+        <div class="cal"><!-- 내부에 js를 이용하여 달력 생성 --></div>
+
+        <div class="schedule-list"></div>
+      </div>
+
+      <!-- 공지사항, 보도자료 -->
+      <div class="announceBox">
+        <div class="announceTitle sectionTitle">공지사항 / 보도자료</div>
+
+        <div class="announceBoxHeaderWrapper">
+          <div class="announceBoxHeader announceSelected">공지사항</div>
+          <div class="announceBoxHeader">보도자료</div>
+          <div class="announceBoxHeader">+</div>
+        </div>
+
+        <div class="announceBoxContentWrapper">
+          <div class="announceBoxContent">
+            <div class="announceDayWrapper">
+              <div class="announceDate">16</div>
+              <div class="yearMonthWrapper">
+                <div class="announceYear">2025</div>
+                <div>.</div>
+                <div class="announceMonth">05</div>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="../img/news02.png" alt="news02" />
-            </div>
-            <div class="swiper-slide">
-              <img src="../img/news03.png" alt="news03" />
-            </div>
-            <div class="swiper-slide">
-              <img src="../img/news04.png" alt="news04" />
-            </div>
-            <div class="swiper-slide">
-              <img src="../img/news05.png" alt="news05" />
-            </div>
-            <div class="swiper-slide">
-              <img src="../img/news06.png" alt="news06" />
-            </div>
-            <div class="swiper-slide">
-              <img src="../img/news07.png" alt="news07" />
-            </div>
-            <div class="swiper-slide">
-              <img src="../img/news08.png" alt="news08" />
-            </div>
-            <div class="swiper-slide">
-              <img src="../img/news09.png" alt="news09" />
+
+            <div class="announceHeadline">
+              함께 뛰고 즐기는 서울! ‘2025 서울시민체육대축전’ 17일(토) 개최
             </div>
           </div>
+
+          <div class="announceBoxContent">
+            <div class="announceDayWrapper">
+              <div class="announceDate">14</div>
+              <div class="yearMonthWrapper">
+                <div class="announceYear">2025</div>
+                <div>.</div>
+                <div class="announceMonth">05</div>
+              </div>
+            </div>
+
+            <div class="announceHeadline">
+              도심 속 광장에서 생활체육 함께 즐겨요, ‘운동하는 서울광장’ 15일(목) 시작
+            </div>
+
+          </div>
+
+          <div class="announceBoxContent">
+            <div class="announceDayWrapper">
+              <div class="announceDate">25</div>
+              <div class="yearMonthWrapper">
+                <div class="announceYear">2025</div>
+                <div>.</div>
+                <div class="announceMonth">04</div>
+              </div>
+            </div>
+
+            <div class="announceHeadline">
+              4.27.(일) 서울하프마라톤…서울 도심 교통 일부 구간 순차 통제
+            </div>
+
+          </div>
+
+          <div class="announceBoxContent">
+            <div class="announceDayWrapper">
+              <div class="announceDate">24</div>
+              <div class="yearMonthWrapper">
+                <div class="announceYear">2025</div>
+                <div>.</div>
+                <div class="announceMonth">03</div>
+              </div>
+            </div>
+
+            <div class="announceHeadline">
+              놀고 싶은 러너들 다 모여라!…러너들의 놀이터, ‘서울 러너스 페스티벌’ 사전접수
+            </div>
+
+          </div>
+
+          <div class="announceBoxContent">
+            <div class="announceDayWrapper">
+              <div class="announceDate">05</div>
+              <div class="yearMonthWrapper">
+                <div class="announceYear">2025</div>
+                <div>.</div>
+                <div class="announceMonth">02</div>
+              </div>
+            </div>
+
+            <div class="announceHeadline">
+              학교 체육시설 개방하면 5천만원 지원… 서울시, 참여학교 모집
+            </div>
+
+          </div>
+
+          <div class="announceBoxContent">
+            <div class="announceDayWrapper">
+              <div class="announceDate">08</div>
+              <div class="yearMonthWrapper">
+                <div class="announceYear">2025</div>
+                <div>.</div>
+                <div class="announceMonth">01</div>
+              </div>
+            </div>
+
+            <div class="announceHeadline">
+              내부 텍스트의 길이가 너무 길어 넘칠까봐 걱정하지 마세요. 줄임표로 대체하여 넘치는 것을 방지합니다.
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 핫둘광장 -->
+    <div class="squareSection">
+      <div class="sqareTitle sectionTitle"> 핫둘광장의 다양한 정보 </div>
+
+      <div class="squareContentWrapper">
+        <!-- grid 가로4 * 세로2 -->
+        <div class="cardList">
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/alsl01.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">물 공포증 없애고 싶다면 쉬엄쉬엄 한강 3종 축제에 참가하세요~🌊</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag alslTag">알쓸신잡</div>
+          </div>
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/report01.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">2025 핫둘기자단의 발대식 현장으로 안내합니다~!</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag reporterTag">기자단</div>
+          </div>
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/alsl02.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">[오늘 뭐 할 건강?] 족저근막염 예방 스트레칭</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag alslTag">알쓸신잡</div>
+          </div>
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/report02.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">2025 핫둘기자단의 첫 시작! 발대식에 다녀오다!</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag reporterTag">기자단</div>
+          </div>
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/alsl03.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">자외선 강한 5월, 무기자차 vs 유기자차 선크림 똑똑하게 고르기!</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag alslTag">알쓸신잡</div>
+          </div>
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/report03.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">날씨 좋은 봄날, 러닝하러 갈래요?</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag reporterTag">기자단</div>
+          </div>
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/alsl04.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">손목에 남은 보물</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag alslTag">알쓸신잡</div>
+          </div>
+
+          <div class="squareCard">
+            <div class="cardImg" style="background-image: url('./img/report04.png');"></div>
+            <div class="cardTextWrapper">
+              <div class="cardTitle">2025 핫둘기자단에 참여하게 되다!</div>
+              <div class="cardContext">2025-00-00</div>
+            </div>
+            <div class="cardTag reporterTag">기자단</div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- 지도  -->
+    <div class="mapSection">
+      <div class="mapTitle"></div>
+      <div class="mapContentWrapper"></div>
+
+
+    </div>
+
+    <!-- 추천영상 -->
+    <div class="videoSection">
+      <div class="videoTitle sectionTitle">핫둘핫둘 추천 영상</div>
+      <div class="videoContentWrapper">
+        <div class="swiper video-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="videoCard">
+                <div class="cardImg" style="background-image: url('./img/video01.png');"></div>
+                <div class="cardTextWrapper">
+                  <div class="cardTitle">영상 제목 1</div>
+                  <div class="cardContext">2025-05-28</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="videoCard">
+                <div class="cardImg" style="background-image: url('./img/video02.png');"></div>
+                <div class="cardTextWrapper">
+                  <div class="cardTitle">영상 제목 1</div>
+                  <div class="cardContext">2025-05-28</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="videoCard">
+                <div class="cardImg" style="background-image: url('./img/video03.png');"></div>
+                <div class="cardTextWrapper">
+                  <div class="cardTitle">영상 제목 1</div>
+                  <div class="cardContext">2025-05-28</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="videoCard">
+                <div class="cardImg" style="background-image: url('./img/video04.png');"></div>
+                <div class="cardTextWrapper">
+                  <div class="cardTitle">영상 제목 1</div>
+                  <div class="cardContext">2025-05-28</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="videoCard">
+                <div class="cardImg" style="background-image: url('./img/video05.png');"></div>
+                <div class="cardTextWrapper">
+                  <div class="cardTitle">영상 제목 1</div>
+                  <div class="cardContext">2025-05-28</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
           <!-- 페이징 -->
           <div class="swiper-pagination"></div>
           <!-- 네비게이션 -->
@@ -239,233 +481,17 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-
-      <!-- 달력과 공지사항, 보도자료 -->
-      <div class="announceSection">
-        <!-- 달력 -->
-        <div class="calWrapper">
-          <div class="calendarTitle sectionTitle">월간 일정</div>
-          <div class="cal"><!-- 내부에 js를 이용하여 달력 생성 --></div>
-
-          <div class="schedule-list"></div>
-        </div>
-
-        <!-- 공지사항, 보도자료 -->
-        <div class="announceBox">
-          <div class="announceTitle sectionTitle">공지사항 / 보도자료</div>
-
-          <div class="announceBoxHeaderWrapper">
-            <div class="announceBoxHeader announceSelected">공지사항</div>
-            <div class="announceBoxHeader">보도자료</div>
-            <div class="announceBoxHeader">+</div>
-          </div>
-
-          <div class="announceBoxContentWrapper">
-            <div class="announceBoxContent">
-              <div class="announceDayWrapper">
-                <div class="announceDate">16</div>
-                <div class="yearMonthWrapper">
-                  <div class="announceYear">2025</div>
-                  <div>.</div>
-                  <div class="announceMonth">05</div>
-                </div>
-              </div>
-
-              <div class="announceHeadline">
-                함께 뛰고 즐기는 서울! ‘2025 서울시민체육대축전’ 17일(토) 개최
-              </div>
-            </div>
-
-            <div class="announceBoxContent">
-              <div class="announceDayWrapper">
-                <div class="announceDate">14</div>
-                <div class="yearMonthWrapper">
-                  <div class="announceYear">2025</div>
-                  <div>.</div>
-                  <div class="announceMonth">05</div>
-                </div>
-              </div>
-
-              <div class="announceHeadline">
-                도심 속 광장에서 생활체육 함께 즐겨요, ‘운동하는 서울광장’ 15일(목) 시작
-              </div>
-              
-            </div>
-
-            <div class="announceBoxContent">
-              <div class="announceDayWrapper">
-                <div class="announceDate">25</div>
-                <div class="yearMonthWrapper">
-                  <div class="announceYear">2025</div>
-                  <div>.</div>
-                  <div class="announceMonth">04</div>
-                </div>
-              </div>
-
-              <div class="announceHeadline">
-                4.27.(일) 서울하프마라톤…서울 도심 교통 일부 구간 순차 통제
-              </div>
-              
-            </div>
-
-            <div class="announceBoxContent">
-              <div class="announceDayWrapper">
-                <div class="announceDate">24</div>
-                <div class="yearMonthWrapper">
-                  <div class="announceYear">2025</div>
-                  <div>.</div>
-                  <div class="announceMonth">03</div>
-                </div>
-              </div>
-
-              <div class="announceHeadline">
-                놀고 싶은 러너들 다 모여라!…러너들의 놀이터, ‘서울 러너스 페스티벌’ 사전접수
-              </div>
-              
-            </div>
-
-            <div class="announceBoxContent">
-              <div class="announceDayWrapper">
-                <div class="announceDate">05</div>
-                <div class="yearMonthWrapper">
-                  <div class="announceYear">2025</div>
-                  <div>.</div>
-                  <div class="announceMonth">02</div>
-                </div>
-              </div>
-
-              <div class="announceHeadline">
-                학교 체육시설 개방하면 5천만원 지원… 서울시, 참여학교 모집
-              </div>
-              
-            </div>
-
-            <div class="announceBoxContent">
-              <div class="announceDayWrapper">
-                <div class="announceDate">08</div>
-                <div class="yearMonthWrapper">
-                  <div class="announceYear">2025</div>
-                  <div>.</div>
-                  <div class="announceMonth">01</div>
-                </div>
-              </div>
-
-              <div class="announceHeadline">
-                내부 텍스트의 길이가 너무 길어 넘칠까봐 걱정하지 마세요. 줄임표로 대체하여 넘치는 것을 방지합니다.
-              </div>
-              
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- 핫둘광장 -->
-      <div class="squareSection">
-        <div class="sqareTitle sectionTitle"> 핫둘광장의 다양한 정보 </div>
-
-        <div class="squareContentWrapper">
-          <!-- grid 가로4 * 세로2 -->
-          <div class="cardList">
-            
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/alsl01.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">물 공포증 없애고 싶다면 쉬엄쉬엄 한강 3종 축제에 참가하세요~🌊</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag alslTag">알쓸신잡</div>
-            </div>
-
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/report01.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">2025 핫둘기자단의 발대식 현장으로 안내합니다~!</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag reporterTag">기자단</div>
-            </div>
-
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/alsl02.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">[오늘 뭐 할 건강?] 족저근막염 예방 스트레칭</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag alslTag">알쓸신잡</div>
-            </div>
-
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/report02.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">2025 핫둘기자단의 첫 시작! 발대식에 다녀오다!</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag reporterTag">기자단</div>
-            </div>
-
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/alsl03.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">자외선 강한 5월, 무기자차 vs 유기자차 선크림 똑똑하게 고르기!</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag alslTag">알쓸신잡</div>
-            </div>
-
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/report03.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">날씨 좋은 봄날, 러닝하러 갈래요?</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag reporterTag">기자단</div>
-            </div>
-
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/alsl04.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">손목에 남은 보물</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag alslTag">알쓸신잡</div>
-            </div>
-
-            <div class="squareCard">
-              <div class="cardImg" style="background-image: url('./img/report04.png');"></div>
-              <div class="cardTextWrapper">
-                <div class="cardTitle">2025 핫둘기자단에 참여하게 되다!</div>
-                <div class="cardContext">2025-00-00</div>
-              </div>
-              <div class="cardTag reporterTag">기자단</div>
-            </div>
-
-            
-          
-          </div>
+    </div>
 
 
-        </div>
+  </section>
 
-      </div>
+  <!-- footer -->
+  <div class="footer"></div>
 
-      <!-- 지도  -->
-      <div class="mapSection">
-        <div class="mapTitle"></div>
-        <div class="mapContentWrapper"></div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./calWithList.js"></script>
+  <script src="./newIndex.js"></script>
+</body>
 
-
-      </div>
-
-      <!-- 추천영상 -->
-      <div class="videoSection"></div>
-    </section>
-
-    <!-- footer -->
-    <div class="footer"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./calWithList.js"></script>
-    <script src="./newIndex.js"></script>
-  </body>
 </html>

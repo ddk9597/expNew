@@ -137,12 +137,8 @@ section.main {
 /* ------------ 핫둘광장 카드 형태 게시글 ------------ */
 .squareSection{
   width: 80%;
-  height: 600px;
+  height: 100%;
   margin-top: 50px;
-}
-
-.sqareTitle{
-
 }
 
 /* 컨테이너 */
@@ -244,3 +240,29 @@ section.main {
   }
 }
 
+.videoSection{
+  width: 80%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+
+
+.videoContentWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .video-swiper {
+    width: 90%;
+    max-width: 1200px;
+  }
+  .video-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .videoCard{
+    width: 100%;
+    height: 80%;
+  }
