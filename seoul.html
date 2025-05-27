@@ -1,0 +1,74 @@
+<!-- seoul_map_full.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서울시 자치구 지도</title>
+  <style>
+    .mapSection {
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    .mapSection svg {
+      width: 100%;
+      height: auto;
+    }
+    .district {
+      fill: #c0c0c0;
+      stroke: #fff;
+      stroke-width: 1;
+      transition: transform 0.3s ease, fill 0.3s ease;
+      transform-origin: center center;
+      transform-box: fill-box;
+      cursor: pointer;
+    }
+    .district:hover {
+      transform: scale(1.05);
+      fill: #00ac97;
+    }
+  </style>
+</head>
+<body>
+  <div class="mapSection"></div>
+
+  <!-- D3, TopoJSON 불러오기 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+  <script>
+    const width = 800;
+    const height = 800;
+    const projection = d3.geoMercator()
+      .center([126.97797, 37.56654]) // 서울 중심 좌표
+      .scale(200000)
+      .translate([width / 2, height / 2]);
+    const path = d3.geoPath().projection(projection);
+
+    const svg = d3.select('.mapSection')
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height);
+
+    // 서울시 자치구 TopoJSON URL
+    const url = 'https://raw.githubusercontent.com/southkorea/seoul-maps/master/geojson/seoul_municipalities_topo_simple.json';
+    d3.json(url).then(topoData => {
+      const geoData = topojson.feature(topoData, topoData.objects.skorea_municipalities_geo);
+      // 광역시/도 제외, 서울시만 필터
+      const seoulFeatures = geoData.features.filter(d => d.properties['code'].startsWith('11'));
+
+      svg.selectAll('path')
+        .data(seoulFeatures)
+        .enter()
+        .append('path')
+        .attr('d', path)
+        .attr('class', 'district')
+        .attr('id', d => d.properties.name)
+        .on('mouseover', (event, d) => {
+          // 툴팁 또는 로그 등 추가 가능
+          console.log(d.properties.name);
+        });
+    });
+  </script>
+</body>
+</html>

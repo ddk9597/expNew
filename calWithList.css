@@ -1,0 +1,78 @@
+.calWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.cal {
+  position: relative;
+}
+.cal .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cal .calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.cal table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cal th, .cal td {
+  width: 14.28%;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #ddd;
+  position: relative;  /* ★ 반드시 있어야 합니다 */
+  padding: 2px;
+  cursor: pointer;
+}
+
+.cal td.empty { background: #fafafa; cursor: default; }
+.cal td.selected { background: #cce5ff; }
+.cal td.today { background: #ffef99; }
+
+/* 연속 이벤트용 바 */
+.event-bar {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+/* 하루 이벤트용 dot */
+.event-dot {
+  position: absolute;
+  bottom: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.schedule {
+  flex: 1;
+  border-left: 2px solid #eee;
+  padding-left: 20px;
+}
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  max-height: 50px;
+  overflow: hidden scroll;
+}
+.schedule-list li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+.schedule-list li a {
+  text-decoration: none;
+  color: #333;
+}

@@ -1,0 +1,32 @@
+<div class="cw-container">
+  <div class="cw-calendar">
+    <table id="cw-calendar-table">
+      <thead>
+        <tr>
+          <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+        </tr>
+      </thead>
+      <tbody id="cw-calendar-body"></tbody>
+    </table>
+  </div>
+
+  <div class="cw-event-list">
+    <h3>행사 목록</h3>
+    <!-- data-include 로 로드된 후, .cw-event 로 변환해서 사용하세요 -->
+    <div class="cw-event" data-start="2025-05-20" data-end="2025-05-20" data-emoji="🎈" data-title="하루 행사" data-link="/detail/1">🎈 하루 행사</div>
+    <div class="event" data-start="2025-05-14" data-end="2025-05-21" data-emoji="🎉" data-title="축제" data-link="/detail/2">🎉 축제</div>
+    <div class="event" data-start="2025-05-27" data-end="2025-05-28" data-emoji="📣" data-title="강연" data-link="/detail/3">📣 양일간 강연</div>
+    <div class="event" data-start="2025-05-28" data-end="2025-05-29" data-emoji="📽️" data-title="영화 상영" data-link="/detail/4">📽️ 영화 상영</div>
+    <div class="event" data-start="2025-05-30" data-end="2025-06-01" data-emoji="🛍️" data-title="플리마켓" data-link="/detail/5">🛍️ 플리마켓</div>
+    <div class="event" data-start="2025-05-21" data-end="2025-05-21" data-emoji="🎤" data-title="콘서트" data-link="/detail/6">🎤 콘서트</div>
+    <div class="event" data-start="2025-05-21" data-end="2025-05-23" data-emoji="🏕️" data-title="야외 캠핑" data-link="/detail/7">🏕️ 야외 캠핑</div>
+    <div class="event" data-start="2025-05-26" data-end="2025-05-26" data-emoji="🧘" data-title="요가 클래스" data-link="/detail/9">🧘 요가 클래스</div>
+  </div>
+
+  <div class="cw-modal" id="cw-eventModal">
+    <div class="cw-modal-content">
+      <h3>📅 선택한 날짜의 일정</h3>
+      <ul id="cw-modalList"></ul>
+    </div>
+  </div>
+</div>
