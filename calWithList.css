@@ -7,6 +7,15 @@
 .cal {
   position: relative;
 }
+
+.sunday{
+  color: red;
+}
+
+.saturday{
+  color: rgb(0, 110, 255);
+}
+
 .cal .calendar-header {
   display: flex;
   justify-content: space-between;
@@ -23,6 +32,14 @@
   width: 100%;
   border-collapse: collapse;
 }
+.cal td{
+  transition: all 0.3s ease;
+}
+
+.cal td:hover{
+  background-color: #dde;
+}
+
 .cal th, .cal td {
   width: 14.28%;
   height: 60px;
@@ -65,6 +82,8 @@
   padding: 0;
   max-height: 50px;
   overflow: hidden scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .schedule-list li {
   margin-bottom: 8px;

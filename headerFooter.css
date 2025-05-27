@@ -4,6 +4,11 @@
 .header {
   background-color: #333;
   font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .header ul.depth1 {
   display: flex;

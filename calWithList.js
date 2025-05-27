@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let month = today.getMonth();
 
   const events = [
-    { date: '2025-05-01', end: '2025-05-05', title: '연속 요가 클래스', link: '/event/yoga' },
-    { date: '2025-05-02', end: '2025-05-06', title: '도서관 작가 강연', link: '/event/author-talk' },
-    { date: '2025-05-03', end: '2025-05-07', title: '어린이날 공연', link: '/event/child-show' },
-    { date: '2025-05-05', end: '2025-05-09', title: '3일간 조깅 모임', link: '/event/jogging' },
-    { date: '2025-05-22', end: '2025-05-26', title: '요리 워크샵', link: '/event/cooking' }
+    { date: '2025-05-01', end: '2025-05-05', title: '요가 클래스', link: '/event/yoga' },
+    { date: '2025-05-02', end: '2025-05-06', title: '한강 철인 삼종', link: '/event/author-talk' },
+    { date: '2025-05-03', end: '2025-05-07', title: '어린이날 서울시민 체육대회', link: '/event/child-show' },
+    { date: '2025-05-05', end: '2025-05-09', title: '반려견과 함께 러닝', link: '/event/jogging' },
+    { date: '2025-05-22', end: '2025-05-26', title: '물놀이 안전교육', link: '/event/cooking' }
   ];
 
   // 색상 부여
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <table>
         <thead>
           <tr>
-            <th>일</th><th>월</th><th>화</th><th>수</th>
-            <th>목</th><th>금</th><th>토</th>
+            <th class="sunday">일</th><th>월</th><th>화</th><th>수</th>
+            <th>목</th><th>금</th><th class="saturday">토</th>
           </tr>
         </thead>
         <tbody id="cal-body"></tbody>
